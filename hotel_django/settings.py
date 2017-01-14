@@ -76,7 +76,13 @@ WSGI_APPLICATION = 'hotel_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+        #'ENGINE': 'django.db.backends.mysql',
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'ENGINE': 'django.db.backends.oracle',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'NAME': os.path.join(BASE_DIR, 'db.mysql'),
+        #'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        #'NAME': os.path.join(BASE_DIR, 'db.oracle'),
     }
 }
 
